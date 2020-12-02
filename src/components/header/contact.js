@@ -6,6 +6,6 @@ const Contact = () => {
     <li><a href="#">info@freshnesecom.com</a></li>
     <div class="del"></div>
     `;
-    return contactList;
+    return contactList.outerHTML;
 };
-export default Contact;
+export default Contact();

@@ -1,10 +1,18 @@
-const nav = () => {
-  const contactList = document.createElement("nav");
-  contactList.innerHTML = `
+const Nav = () => {
+  const tagNav = document.createElement("Nav");
+  tagNav.innerHTML = `
+    <ul>
     <li><a href="#">Blog</a></li>
     <li><a href="#">About Us</a></li>
-    <li><a href="#">Careersm</a></li>
-    `;
-  return contactList;
+    <li><a href="#">Careers</a></li>
+    </ul>`;
+  return tagNav.outerHTML;
 };
-export default nav;
+export default Nav();
+
+
+
+
+
+
+
