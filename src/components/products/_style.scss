@@ -1,0 +1,83 @@
+.products{
+     margin: 64px 44px;
+    &__row{
+        display: flex;
+    }
+    &__list{
+        margin-bottom: 48px;
+    }
+    &__title{
+        font-family: $font-Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 12px;
+        cursor: pointer;
+    }
+    &__item{
+        margin-bottom: 12px;
+    }
+    &__link{
+        font-family: $font-Opensans;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-Green;
+    }
+}
+.product{
+    border: 1px solid black;
+    border-radius: 12px;
+    max-width: 270px;
+    margin-left: 40px;
+    &__menu{
+        position: relative;
+        padding: 16px;
+    }
+    &__discount{
+        position: absolute;
+        font-family: $font-Poppins;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-Green;
+        padding: 0 8px;
+        border-radius: 12px;
+        background-color: #F4F8EC;
+        margin: 12px 0 0 12px;
+    }
+    &__title{
+        font-family: $font-Poppins;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        margin: 16px 0;
+    }
+    &__suptitle{
+        font-family: $font-Opensans;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    &__price{
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__price--amount{
+        font-family: $font-Poppins;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        align-items: center;
+    }
+    &__button{
+        padding: 7px 12px;
+        border: 2px solid #46760A;
+        background-color: $color-Green;
+        font-family: $font-Poppins;
+        border-radius: 12px;
+        font-size: 15px;
+        line-height: 22px;
+        color: $color-white;
+    }
+}

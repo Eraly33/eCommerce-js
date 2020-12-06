@@ -219,6 +219,10 @@ a {
   background-repeat: no-repeat;
 }
 
+.hero {
+  margin: 64px 44px;
+}
+
 .hero__row {
   display: flex;
   justify-content: space-between;
@@ -263,7 +267,8 @@ a {
   border-radius: 12px;
   position: relative;
   background-color: #3c987694;
-  height: 100%;
+  width: 420px;
+  height: 280px;
 }
 
 .banner__images {
@@ -341,4 +346,101 @@ a {
   transition: .6s;
   color: #ffff;
   z-index: 10;
+}
+
+.products {
+  margin: 64px 44px;
+}
+
+.products__row {
+  display: flex;
+}
+
+.products__list {
+  margin-bottom: 48px;
+}
+
+.products__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.products__item {
+  margin-bottom: 12px;
+}
+
+.products__link {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+  color: #6A983C;
+}
+
+.product {
+  border: 1px solid black;
+  border-radius: 12px;
+  max-width: 270px;
+  margin-left: 40px;
+}
+
+.product__menu {
+  position: relative;
+  padding: 16px;
+}
+
+.product__discount {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  padding: 0 8px;
+  border-radius: 12px;
+  background-color: #F4F8EC;
+  margin: 12px 0 0 12px;
+}
+
+.product__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  margin: 16px 0;
+}
+
+.product__suptitle {
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product__price {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__price--amount {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  align-items: center;
+}
+
+.product__button {
+  padding: 7px 12px;
+  border: 2px solid #46760A;
+  background-color: #6A983C;
+  font-family: "Poppins", sans-serif;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffff;
 }
