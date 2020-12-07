@@ -30,7 +30,7 @@ const Header = () => {
     const h4 = document.querySelector('.search__title')
 
     h4.addEventListener('click', () => {
-        ul.classList.toggle('.is-active');
+        ul.classList.toggle('is-active');
     });
 
     return tagHeader;

@@ -58,17 +58,24 @@
         font-size: 12px;
         line-height: 16px;
     }
-    &__price{
+    &__price-buy-now{
         margin-top: 16px;
         display: flex;
         justify-content: space-between;
     }
-    &__price--amount{
+    &__newprice--amount{
         font-family: $font-Poppins;
         font-weight: 600;
         font-size: 18px;
         line-height: 27px;
         align-items: center;
+    }
+    &__oldprice--amount{
+        font-family: $font-Poppins;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-spaceGray;
     }
     &__button{
         padding: 7px 12px;

@@ -1,7 +1,7 @@
 
 const searchBar = () => {
   const div = document.createElement('div');
-  const arrayOfTitles = ['Bakery', 'Fruit and vegetables', 'Meat and fish', 'Drinks', 'Kitchen', 'Special', 'nutrition', 'Baby', 'Pharmacy'];
+  const arrayOfTitles = ['Bakery', 'Fruit and vegetables', 'Meat and fish', 'Drinks', 'Kitchen', 'Special nutrition', 'Baby', 'Pharmacy'];
   const arrayOflies = ['1', '2', '3', '4'];
   for (let i = 0; i < 8; i++) {
     const ul = document.createElement('ul');
