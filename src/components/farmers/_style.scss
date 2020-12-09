@@ -1,0 +1,80 @@
+.farmers{
+    margin: 64px 44px;
+    &__row{
+        display: flex;
+    }
+    &__title{
+        font-family: $font-Poppins;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 16px;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    &__item{
+        margin-bottom: 16px;
+    }
+    &__link{
+        font-family: $font-Opensans;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-Green;
+        border-bottom: 1px solid;
+                &:hover{
+            opacity: 0.6;
+        }
+    }
+    &__product{
+    border: 1px solid black;
+    border-radius: 12px;
+    max-width: 270px;
+    margin-left: 40px;
+    }
+    &__product-item{
+        padding: 16px;
+    }
+    &__title{
+        font-family: $font-Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    &__suptitle{
+        font-family: $font-Opensans;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    &__price-buy-now{
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__newprice--amount{
+        font-family: $font-Poppins;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    &__oldprice--amount{
+        font-family: $font-Poppins;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-spaceGray;
+        text-decoration: line-through;
+    }
+    &__button{
+        padding: 7px 12px;
+        border: 2px solid #46760A;
+        background-color: $color-Green;
+        font-family: $font-Poppins;
+        border-radius: 12px;
+        font-size: 15px;
+        line-height: 22px;
+        color: $color-white;
+    }
+}

@@ -1,0 +1,63 @@
+.slider{
+    margin: 64px 44px;
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.customers{
+    margin: 70px 0 37px;
+    display: flex;
+    justify-content: space-between;
+    &__slider{
+    border: 1px solid black;
+    max-width: 370px;
+    min-height: 200px;
+    border-radius: 12px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+   }
+   &__title{
+    font-family: $font-Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+   }
+    &__btn{
+    font-family: $font-Poppins;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 6px 34px 6px 12px;
+    color: black;
+   }
+   &__description{
+       margin: 24px 32px 0;
+   }
+   &__suptitle{
+    font-family: $font-Poppins;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 24px;
+   }
+   &__name{
+    margin-top: 24px;
+    font-family: $font-Poppins;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-spaceGray;
+   }
+   &__images{
+       position: absolute;
+       top: 86%;
+       left: 44%;
+   }
+}

@@ -9,7 +9,7 @@ const Farmers = () => {
         <li class="farmers__item"><a href="#" class="farmers__link">Chicken</a></li>
         <li class="farmers__item"><a href="#" class="farmers__link">Pork</a></li>
     </ul>
-    <button class="button">More products<button>
+    <button class="button">More products</button>
     `;
 
     return FarmersMenu.outerHTML;

@@ -9,7 +9,7 @@ const Products = () => {
         <li class="products__item"><a href="#" class="products__link">Pharmacy</a></li>
         <li class="products__item"><a href="#" class="products__link">Baby</a></li>
     </ul>
-    <button class="button">More products<button>
+    <button class="button">More products</button>
     `;
 
     return ProductsMenu.outerHTML;
