@@ -1,63 +1,49 @@
-.slider{
-    margin: 64px 44px;
-    &__row{
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-.customers{
-    margin: 70px 0 37px;
-    display: flex;
-    justify-content: space-between;
-    &__slider{
-    border: 1px solid black;
-    max-width: 370px;
-    min-height: 200px;
-    border-radius: 12px;
-    text-align: center;
-    justify-content: center;
-    position: relative;
-   }
-   &__title{
-    font-family: $font-Poppins;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-
-   }
-    &__btn{
-    font-family: $font-Poppins;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 22px;
-    border-radius: 12px;
-    background-color: #fff;
-    padding: 6px 34px 6px 12px;
-    color: black;
-   }
-   &__description{
-       margin: 24px 32px 0;
-   }
-   &__suptitle{
-    font-family: $font-Poppins;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 22px;
-    margin-bottom: 24px;
-   }
-   &__name{
-    margin-top: 24px;
-    font-family: $font-Poppins;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-    color: $color-spaceGray;
-   }
-   &__images{
-       position: absolute;
-       top: 86%;
-       left: 44%;
-   }
-}
+// .reviews {
+// 	position: relative;
+// 	&::before {
+// 		content: "";
+// 		position: absolute;
+// 		left: 0;
+// 		top: 0;
+// 		z-index: 111111;
+// 		height: 100%;
+// 		width: 20px;
+// 		background-color: rgba(255, 255, 255, 0.8);
+// 		box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
+// 	}
+// 	&::after {
+// 		content: "";
+// 		position: absolute;
+// 		right: 0;
+// 		top: 0;
+// 		z-index: 111111;
+// 		height: 100%;
+// 		width: 20px;
+// 		background-color: rgba(255, 255, 255, 0.8);
+// 		box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
+// 	}
+// 	&__row {
+// 		flex-wrap: nowrap;
+// 	}
+// 	&__item {
+// 		padding: 24px 32px;
+// 		max-width: 370px;
+// 		text-align: center;
+// 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+// 		border-radius: 12px;
+// 	}
+// 	&__description {
+// 		@include font(16px, 500, 23px);
+// 		color: #151515;
+// 	}
+// 	&__author {
+// 		@include font(12px, 600, 18px);
+// 		margin: 24px 0 16px;
+// 		color: #a9a9a9;
+// 	}
+// 	&__image {
+// 		width: 48px;
+// 		height: 48px;
+// 		border-radius: 50%;
+// 	}
+// }

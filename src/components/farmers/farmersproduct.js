@@ -13,7 +13,7 @@ const FarmersProduct = () => {
             <div class="farmers__price">
             <p class="farmers__newprice--amount">1.48 USD</p>
             </div>
-           <a href="#" class="farmers__button">Buy now</a>
+           <a href="#" class="product-button">Buy now</a>
           </div>
         </div>
     </div>

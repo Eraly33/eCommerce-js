@@ -1,0 +1,77 @@
+.headline{
+    &__row{
+        display: flex;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 37px;
+    }
+    &__title{
+        font-family: $font-Poppins;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px; 
+    }
+    &__btn{
+        font-family: $font-Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: #151515;
+        padding: 6px 34px 6px 12px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    }
+    &__product{
+        margin-left: 32px;
+        padding: 16px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        align-items: center;
+    }
+    &__images{
+        width: 250px;
+        height: 180px;
+        margin-bottom: 16px;
+        border-radius: 12px;
+    }
+    &__product-title{
+        font-family: $font-Poppins;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    &__description{
+        font-family: $font-Opensans;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #575757;
+        margin: 16px 0 4px;
+    }
+    &__price{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__newprice{
+        font-family: $font-Poppins;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    &__oldprice{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        font-family: $font-Poppins;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-spaceGray; 
+        text-decoration: line-through; 
+    }
+
+}

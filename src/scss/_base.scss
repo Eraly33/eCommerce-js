@@ -33,3 +33,15 @@
             transition: .3s;
         }
 }
+
+.product-button{
+        padding: 7px 12px;
+        border: 2px solid #46760A;
+        background-color: $color-Green;
+        font-family: $font-Poppins;
+        border-radius: 12px;
+        font-size: 15px;
+        line-height: 22px;
+        color: $color-white;
+}
+

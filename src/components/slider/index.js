@@ -1,62 +1,56 @@
+import { reviewsData } from '../components/reviews/const.js';
+import Munarbek from './munarbek.js';
+
+const Reviews = (item) => {
+  const section = document.createElement('section');
+  const column = document.createElement('div');
+  const div = document.createElement('div');
+  const p = document.createElement('p');
+  const h2 = document.createElement('h2');
+  const h3 = document.createElement('h3');
+  const img = document.createElement('img');
+
+  section.className = 'reviews swiper-container';
+  h2.className = 'reviews__title';
+  h3.className = 'reviews__author';
+  img.className = 'reviews__image';
+  p.className = 'reviews__description';
+  div.className = 'reviews__item';
+  column.className = 'col-4 swiper-slide';
 
 
-const Slider = () => {
-     const section = document.createElement('section')
-     section.className = "slider"
-     section.innerHTML = `
-     <div class="container">
-         <div class="customers">
-            <span class="customers__title">Our customers says</span>
-            <a href="#" class="customers__btn">Button</a>
-         </div>
-       <div class="slider__row">
-         <div class="customers__slider">
-             <div class="customers__description">
-                <span class="customers__suptitle">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</span>
-              </div>
-            <p class="customers__name">Name and Surname</p>  	
-            <img class="customers__images" src="../src/img/slider.png" alt="">
-          </div>
-          <div class="customers__slider">
-             <div class="customers__description">
-                <span class="customers__suptitle">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</span>
-              </div>
-            <p class="customers__name">Name and Surname</p>  	
-            <img class="customers__images" src="../src/img/slider.png" alt="">
-          </div>
-          <div class="customers__slider">
-             <div class="customers__description">
-                <span class="customers__suptitle">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</span>
-              </div>
-            <p class="customers__name">Name and Surname</p>  	
-            <img class="customers__images" src="../src/img/slider.png" alt="">
-          </div>
-       </div>
-     </div>
-     `;
+  img.src = item[0].img;
 
+  img.alt = 'avatar';
 
-     document.body.append(section);
-     return section;
+  p.innerHTML = `“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “`;
+  h3.innerHTML = `Name and Surname`;
+
+  div.append(p);
+  div.append(h3);
+  div.append(img);
+  column.append(div);
+
+  section.innerHTML = `
+		<div class="swiper-container">
+      <div class="swiper-wrapper">
+      	${column.outerHTML}
+				${column.outerHTML}
+				${column.outerHTML}
+				${column.outerHTML}
+				${column.outerHTML}
+				${column.outerHTML}
+				${column.outerHTML}
+				${column.outerHTML}
+			</div>
+		</div>
+  `;
+  document.body.append(section);
+  $`{Reviews(reviewsData.map((item) => item))}`;
+  Munarbek();
+  return section;
+  
+
 };
 
-
-
-// $('.slider__row').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows: false,
-//   fade: true,
-//   asNavFor: '.slider__row'
-// });
-// $('.slider__row').slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   asNavFor: '.slider__row',
-//   dots: true,
-//   centerMode: true,
-//   focusOnSelect: true
-// });
-
-
-Slider();
+Reviews();

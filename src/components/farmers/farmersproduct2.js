@@ -15,7 +15,7 @@ const FarmersProduct2 = () => {
             <p class="farmers__newprice--amount">0.28 USD</p>
             <p class="farmers__oldprice--amount">48.56</p>
             </div>
-           <a href="#" class="farmers__button">Buy now</a>
+           <a href="#" class="product-button">Buy now</a>
           </div>
         </div>
     </div>

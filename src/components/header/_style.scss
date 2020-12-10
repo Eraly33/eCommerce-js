@@ -72,21 +72,45 @@
     .search {
         display: flex;
         padding: 10px 16px;
+        align-items: center;
         background-color: $color-whiteGray;
         max-height: 42px;
         border-radius: 12px;
         &__list {
             max-height: 23px;
+            width: 120px;
             &.is-active{
                 li{
                     display: block;
-                    z-index: 11;
+                    animation: fading 0.3s forwards;
+                    @keyframes fading{
+                        from{
+                            height: 0;
+                        }
+                        to{
+                            height: 40px;
+                        }
+                    }
                 }
             }
         }
         &__item {
             display: none;
-            background-color: black;
+            z-index: 1;
+            &:last-child {
+			border-bottom-left-radius: 15px;
+			border-bottom-right-radius: 15px;
+		    }
+		    &:nth-child(2) {
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+		    }
+		    &:hover {
+			background-color: $color-Green;
+			a {
+				color: $color-white;
+			}
+		}
         }
         &__title {
             position: relative;

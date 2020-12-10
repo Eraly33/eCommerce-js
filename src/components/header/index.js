@@ -20,7 +20,7 @@ const Header = () => {
     ${icon}
     </div>
     <div class="header__bottom">
-    ${menu}
+    
     </div>
     </div>
     `;

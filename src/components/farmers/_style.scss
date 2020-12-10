@@ -22,7 +22,7 @@
         font-size: 14px;
         line-height: 19px;
         color: $color-Green;
-        border-bottom: 1px solid;
+        text-decoration: underline;
                 &:hover{
             opacity: 0.6;
         }
@@ -30,7 +30,6 @@
     &__product{
     border: 1px solid black;
     border-radius: 12px;
-    max-width: 270px;
     margin-left: 40px;
     }
     &__product-item{
@@ -66,15 +65,5 @@
         line-height: 18px;
         color: $color-spaceGray;
         text-decoration: line-through;
-    }
-    &__button{
-        padding: 7px 12px;
-        border: 2px solid #46760A;
-        background-color: $color-Green;
-        font-family: $font-Poppins;
-        border-radius: 12px;
-        font-size: 15px;
-        line-height: 22px;
-        color: $color-white;
     }
 }
