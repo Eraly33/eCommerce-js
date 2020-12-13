@@ -1,6 +1,6 @@
 const Contact = () => {
     const contactList = document.createElement('ul')
-    contactList.className = "contact"
+    contactList.className = "header__contact contact"
     contactList.innerHTML = `
     <li class="contact__item"><a class="contact__link" href="#">Chat with us</a></li>
     <li class="contact__item"><a class="contact__link" href="#">+420 336 775 664</a></li>

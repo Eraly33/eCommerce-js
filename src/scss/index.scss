@@ -1,12 +1,12 @@
 
 @import "variables";
-@import "./base";
+@import "maxin";
+@import "base";
 @import "../scss/columns";
 @import "../components/header/style";
 @import "../components/hero/style";
 @import "../components/products/style";
 @import "../components/farmers/style";
-@import "../components/slider/style";
 @import "../components/headline/style";
 @import "../components/blogposts/style";
 

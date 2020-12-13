@@ -1,39 +1,63 @@
 import Contact from './contact.js';
-import Nav from "./nav.js";
-import img from "./img.js"
-import search from "./search.js"
-import icon from "./icon.js"
-import menu from "./menu.js"
+import Nav from './nav.js';
+import Logo from './logo.js';
+import searchBar from './searchBar.js';
+import System from './system.js';
+import DropDowns from './menu.js';
+
 const Header = () => {
-    const tagHeader = document.createElement('Header')
-    tagHeader.className = "header"
-    tagHeader.innerHTML = `
-    <div class="container"> 
-    <div class="header__top">
-      ${Contact}
-      ${Nav}
-    </div>
-    <div class="del"></div>
-    <div class="header__middle">
-    ${img}
-    ${search}
-    ${icon}
+  const tagHeader = document.createElement('header');
+  tagHeader.innerHTML = `
+		<div class="container">
+			<div class="header__top">
+				${Contact}
+				${Nav}
+			</div>
+      <div class="header__middle">
+        ${Logo}
+        ${searchBar}
+        ${System}
+			</div>
     </div>
     <div class="header__bottom">
-    
+      <div class="container">
+        ${DropDowns}
+       </div>
     </div>
-    </div>
-    `;
-    document.body.append(tagHeader);
+  `;
 
-    const ul = document.querySelector('.search__list');
-    const h4 = document.querySelector('.search__title')
+  document.body.append(tagHeader);
 
-    h4.addEventListener('click', () => {
-        ul.classList.toggle('is-active');
+  const headerMiddle = () => {
+    const ul = document.querySelector('.search-bar__list');
+    const h3 = document.querySelector('.search-bar__title');
+    const button = document.querySelector('.search-bar__btn');
+
+    button.addEventListener('click', () => {
+      button.classList.toggle('is-active');
     });
 
-    return tagHeader;
+    h3.addEventListener('click', () => {
+      ul.classList.toggle('is-active');
+      h3.classList.toggle('is-active');
+    });
+  };
+  const headerBottom = () => {
+    const ul = document.querySelectorAll('.dropdown__list');
+    const h3 = document.querySelectorAll('.dropdown__title');
 
+    h3.forEach((item, index) => {
+      item.addEventListener('click', (event) => {
+        event.target.classList.toggle('is-active');
+        ul.forEach((e, i) => {
+          if (i != index) e.classList.remove('is-active');
+        });
+        ul[index].classList.toggle('is-active');
+      });
+    });
+  };
+  headerMiddle();
+  headerBottom();
+  return tagHeader;
 };
-Header();
+export default Header;
