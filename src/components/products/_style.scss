@@ -33,13 +33,18 @@
     }
 }
 .product{
-    border: 1px solid black;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     max-width: 270px;
     margin-left: 40px;
     &__menu{
         position: relative;
         padding: 16px;
+    }
+    &__images{
+      width: 236px;
+      height: 180px;
+      border-radius: 12px;  
     }
     &__discount{
         position: absolute;

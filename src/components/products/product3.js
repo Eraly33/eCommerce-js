@@ -4,7 +4,7 @@ const Product3 = () => {
     tagdiv.innerHTML = `
   <div class="product__menu">  
         <p class="product__discount">- 36 %</p>
-       <img class="product__images" alt="" src="../src/img/product.png">
+       <img class="product__images" alt="" src="https://eat-marketing.co.uk/wp-content/uploads/2013/10/dietary-requirements.jpg">
       <div class="product__menu>
            <a href="#" class="product__list">
             <h3 class="product__title">Product Title</h3>

@@ -56,6 +56,10 @@
   width: 33.33%;
 }
 
+.col-5 {
+  width: 42%;
+}
+
 li {
   list-style: none;
   display: flex;
@@ -433,7 +437,7 @@ a {
 }
 
 .product {
-  border: 1px solid black;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   max-width: 270px;
   margin-left: 40px;
@@ -442,6 +446,12 @@ a {
 .product__menu {
   position: relative;
   padding: 16px;
+}
+
+.product__images {
+  width: 236px;
+  height: 180px;
+  border-radius: 12px;
 }
 
 .product__discount {
@@ -543,13 +553,19 @@ a {
 }
 
 .farmers__product {
-  border: 1px solid black;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   margin-left: 40px;
 }
 
 .farmers__product-item {
   padding: 16px;
+}
+
+.farmers__images {
+  width: 236px;
+  height: 180px;
+  border-radius: 12px;
 }
 
 .farmers__title {
@@ -671,4 +687,163 @@ a {
   line-height: 18px;
   color: #A9A9A9;
   text-decoration: line-through;
+}
+
+.blogposts {
+  margin: 64px 44px;
+}
+
+.blogposts__row {
+  display: flex;
+}
+
+.blogposts__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.blogposts__item {
+  position: relative;
+}
+
+.blogposts__btn {
+  position: absolute;
+  z-index: 1;
+  color: #6A983C;
+  padding: 0 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: #f4f8ec;
+  border-radius: 12px;
+  top: 24px;
+  left: 24px;
+}
+
+.blogposts__description {
+  position: absolute;
+  bottom: 64px;
+  left: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #ffff;
+  width: 380px;
+}
+
+.blogposts__author-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+.blogposts__author {
+  position: absolute;
+  bottom: 32px;
+  left: 64px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffff;
+}
+
+.blogposts__data {
+  position: absolute;
+  bottom: 32px;
+  left: 200px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffff;
+}
+
+.breakfast__images {
+  margin-bottom: 24px;
+}
+
+.breakfast__btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 0 8px;
+  background-color: #f4f8ec;
+  border-radius: 12px;
+  color: #6A983C;
+}
+
+.breakfast__description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  margin: 8px 0  16px;
+  width: 268px;
+}
+
+.breakfast__author {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.breakfast__data {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  margin-left: 20px;
+}
+
+.dinner2__row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dinner2__images {
+  max-width: 90px;
+  min-height: 90px;
+  border-radius: 12px;
+}
+
+.dinner2__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  width: 225px;
+  margin-bottom: 16px;
+}
+
+.dinner2__author {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.dinner2__data {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
 }
